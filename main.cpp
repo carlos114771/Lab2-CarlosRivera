@@ -20,14 +20,43 @@ int main(){
                 break;
             }//fin del ejercicio 1
             case 2:{ 
-               
+                double x1,x2,x3,x4,y1,y2,y3,y4;
+                double d1,d2,d3,d4;
+                cout<<"Ingrese el punto x1: "<<endl;
+                cin>>x1;
+                cout<<"Ingrese el punto y1: "<<endl;
+                cin>>y1;
+                cout<<"Ingrese el punto x2: "<<endl;
+                cin>>x2;
+                cout<<"Ingrese el punto y2: "<<endl;
+                cin>>y2;
+                cout<<"Ingrese el punto x3: "<<endl;
+                cin>>x3;
+                cout<<"Ingrese el punto y3: "<<endl;
+                cin>>y3;
+                cout<<"Ingrese el punto x4: "<<endl;
+                cin>>x4;
+                cout<<"Ingrese el punto y4: "<<endl;
+                cin>>y4;
+                if(x1==x2||x1==x3||x1==x4||x2==x3||x2==x4){
+                    cout<<"coordenadas invalidas"<<endl;
+                }
+                cout<<"Los Puntos son: "<<endl;
+                cout<<"( "<<x1<<" , "<<y1<<" )"<<endl;
+                cout<<"( "<<x2<<" , "<<y2<<" ) "<<endl;
+                cout<<"( "<<x3<<" , "<<y3<<" ) "<<endl;
+                cout<<"( "<<x4<<" , "<<y4<<" ) "<<enld;
+
+                cout<<"Los lados del trapezoide miden: "<<endl;
+
+              //  d1=sqrt((pow((x2-x1),2))+((pow(y2-y1),2)));
+              //  d2
                 break;
             }
             case 3:{
                 salir=true;
                 break;
-            }
-        
+            }        
         }//fin del switch
     }//fin del while
     return 0;
@@ -62,14 +91,10 @@ double factorial(double i){
         return 1;
     }else{
         return i*factorial(i-1);
-    }
-  }
+    }    
+}
 
-
-  double coordenada(){
-    coordenada x1,y1;
-    coordenada x2,y2;
-    coordenada x3,y3;
-    coordenada x4,y4;
-  
-  }
+double distancia(int x1, int x2, int y1, int y2){
+    double  distancia=sqrt((pow(x2-x1,2))+(pow(y2-y1,2)));
+    return distancia;
+}
