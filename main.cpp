@@ -7,7 +7,7 @@ double factorial(double);
 int main(){
     bool salir=false;
     while(!salir){
-        switch(menu()){
+        switch(menu()){//inicio del switch
             case 1:{
                 double  numero,resultado,n=13;
                 cout<<"Ingrese un numero: "<<endl;
@@ -18,8 +18,9 @@ int main(){
                 resultado+=1;
                 cout<<"El resultado es: "<<resultado<<endl;
                 break;
-            }
-            case 2:{
+            }//fin del ejercicio 1
+            case 2:{ 
+               
                 break;
             }
             case 3:{
@@ -27,11 +28,11 @@ int main(){
                 break;
             }
         
-        }
-    }
+        }//fin del switch
+    }//fin del while
     return 0;
 }
-
+//metodo del menu
 
 int menu(){
     int opcion;
@@ -52,6 +53,7 @@ int menu(){
     return opcion;
 }
 
+//metodo del factorial
 
 double factorial(double i){
     if(i<0){
@@ -61,5 +63,13 @@ double factorial(double i){
     }else{
         return i*factorial(i-1);
     }
+  }
 
-}
+
+  double coordenada(){
+    coordenada x1,y1;
+    coordenada x2,y2;
+    coordenada x3,y3;
+    coordenada x4,y4;
+  
+  }
